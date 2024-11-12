@@ -1,5 +1,5 @@
-import React from 'react'
-import PostCard from '../../components/PostCard'
+//ALIAS
+import PostCard from '@/components/PostCard'
 
 async function loadPosts() {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
