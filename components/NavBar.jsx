@@ -1,9 +1,12 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import './NavBar.css'
 
 export default function NavBar(){
     return (
-        <nav>
-            <h1>Navbar</h1>
+        <nav className='navbar'>
+            <Link href="/">
+                <h1 className='text-3xl  font-bold'>Next Js Moment</h1>
+            </Link>
             <ul>
             <li>
                 <Link href="/">Home</Link>
