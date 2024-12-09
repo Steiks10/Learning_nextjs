@@ -1,11 +1,14 @@
 import { NextResponse } from 'next/server'
 export function GET(){
+    
     return NextResponse.json({
         "message": "Obteniendo datos"
     }) 
 }
 
-export function POST(){
+export async function POST(request){
+    const data = await request.json()
+    console.log(data)
     return NextResponse.json({
         "message": "Creando datos"
     }) 
